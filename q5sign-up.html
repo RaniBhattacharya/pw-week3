@@ -1,0 +1,54 @@
+<!--create a sign-up  from with proper validation-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <form id="signupForm" action="signup_url_here" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required minlength="3">
+        <span class="error" id="firstNameError"></span><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required minlength="3">
+        <span class="error" id="lastNameError"></span><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+        <span class="error" id="passwordError"></span><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <span class="error" id="confirmPasswordError"></span><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="0" max="150">
+        <span class="error" id="ageError"></span><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <input type="checkbox" id="agreeToTerms" name="agreeToTerms" required>
+        <label for="agreeToTerms">I agree to the terms and conditions</label>
+        <span class="error" id="termsError"></span><br><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
+    </body>
+    </html>
+
+    
